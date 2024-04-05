@@ -14,6 +14,10 @@
 		64B7BF2C2BBDAF18005322EA /* HackerNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7BF2B2BBDAF18005322EA /* HackerNewsTests.swift */; };
 		64B7BF362BBDAF18005322EA /* HackerNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7BF352BBDAF18005322EA /* HackerNewsUITests.swift */; };
 		64B7BF382BBDAF18005322EA /* HackerNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7BF372BBDAF18005322EA /* HackerNewsUITestsLaunchTests.swift */; };
+		64B7BF462BBDB369005322EA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7BF452BBDB369005322EA /* NetworkManager.swift */; };
+		64B7BF482BBDB50B005322EA /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7BF472BBDB50B005322EA /* PostData.swift */; };
+		64B7BF4B2BBDBE66005322EA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7BF4A2BBDBE66005322EA /* DetailView.swift */; };
+		64CC253A2BBFFFE600F79948 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CC25392BBFFFE600F79948 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		64B7BF312BBDAF18005322EA /* HackerNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64B7BF352BBDAF18005322EA /* HackerNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsUITests.swift; sourceTree = "<group>"; };
 		64B7BF372BBDAF18005322EA /* HackerNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64B7BF452BBDB369005322EA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		64B7BF472BBDB50B005322EA /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		64B7BF4A2BBDBE66005322EA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		64CC25392BBFFFE600F79948 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,8 @@
 		64B7BF192BBDAF16005322EA /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				64B7BF492BBDBE4C005322EA /* New Group */,
+				64B7BF442BBDB338005322EA /* MModels */,
 				64B7BF1A2BBDAF16005322EA /* HackerNewsApp.swift */,
 				64B7BF1C2BBDAF16005322EA /* ContentView.swift */,
 				64B7BF1E2BBDAF18005322EA /* Assets.xcassets */,
@@ -125,6 +135,24 @@
 				64B7BF372BBDAF18005322EA /* HackerNewsUITestsLaunchTests.swift */,
 			);
 			path = HackerNewsUITests;
+			sourceTree = "<group>";
+		};
+		64B7BF442BBDB338005322EA /* MModels */ = {
+			isa = PBXGroup;
+			children = (
+				64B7BF452BBDB369005322EA /* NetworkManager.swift */,
+				64B7BF472BBDB50B005322EA /* PostData.swift */,
+			);
+			path = MModels;
+			sourceTree = "<group>";
+		};
+		64B7BF492BBDBE4C005322EA /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				64B7BF4A2BBDBE66005322EA /* DetailView.swift */,
+				64CC25392BBFFFE600F79948 /* WebView.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B7BF462BBDB369005322EA /* NetworkManager.swift in Sources */,
+				64B7BF482BBDB50B005322EA /* PostData.swift in Sources */,
 				64B7BF1D2BBDAF16005322EA /* ContentView.swift in Sources */,
+				64CC253A2BBFFFE600F79948 /* WebView.swift in Sources */,
+				64B7BF4B2BBDBE66005322EA /* DetailView.swift in Sources */,
 				64B7BF1B2BBDAF16005322EA /* HackerNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +460,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -457,6 +490,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
